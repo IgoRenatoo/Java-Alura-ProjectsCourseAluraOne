@@ -11,19 +11,11 @@ Exercício 1 - Hortifruti
 */
 package model;
 
-public class Produto {
-  private String name;
-  private double price;
-  private int quantity;
+public class ProdutoPerecivel extends Produto2{
+  public double validity;
 
-  public Produto(String name, double price, int quantity) {
-    this.name = name;
-    this.price = price;
-    this.quantity = quantity;
-  }
-
-  @Override
-  public String toString() {
-    return this.name;
+  public ProdutoPerecivel(String name, double price, int quantity, double validity) {
+    super(name, price, quantity);
+    this.validity = validity;
   }
 }
