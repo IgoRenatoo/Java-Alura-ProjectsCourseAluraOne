@@ -13,6 +13,6 @@ public class MainApplication1 {
 
     APIGoogleBooks newSearch = new APIGoogleBooks();
 
-    System.out.println(newSearch.searchBook(book));
+    newSearch.searchBook(book);
   }
 }
