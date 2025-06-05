@@ -52,5 +52,29 @@ public class Application implements CommandLineRunner {
 		System.out.println("Padrão: " + lista);
 		System.out.println("Sem duplicação: " + newLista);
 		System.out.println("-------------------------------");
+
+		// Exercício 5
+		List<List<Integer>> listaNumeros = Arrays.asList(
+						Arrays.asList(1,2,3),
+						Arrays.asList(4,5,6),
+						Arrays.asList(7,8,9)
+		);
+		List<Integer> newListaNumeros = new ArrayList<>(Arrays.asList());
+
+		listaNumeros.stream()
+						.flatMap(list -> list.stream())
+						.forEach(prime -> {
+							int cont = 0;
+							for (int i = 1; i <= prime; i++){
+								if(prime % i == 0){
+									cont++;
+								}
+							}
+							if(cont == 2){
+								newListaNumeros.add(prime);
+							}
+						});
+
+		System.out.println("Lista dos números primos: " + newListaNumeros);
 	}
 }

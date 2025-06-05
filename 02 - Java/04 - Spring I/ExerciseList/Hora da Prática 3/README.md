@@ -12,7 +12,7 @@
 
 - [x] Dada a lista `List<String> palavras = Arrays.asList("apple", "banana", "apple", "orange", "banana");`, --remova as duplicatas-- e imprima o resultado.
 
-- [] Dada uma lista de sublistas `List<List<Integer>> listaDeNumeros`, extraia --todos os números primos--, colete-os em uma única lista e ordene em ordem crescente.
+- [x] Dada uma lista de sublistas `List<List<Integer>> listaDeNumeros`, extraia --todos os números primos--, colete-os em uma única lista e ordene em ordem crescente.
 
 - [] Dado um objeto `Pessoa` com os campos `nome` e `idade`, filtre as pessoas com --mais de 18 anos--, extraia seus nomes e imprima-os em --ordem alfabética--.
 
