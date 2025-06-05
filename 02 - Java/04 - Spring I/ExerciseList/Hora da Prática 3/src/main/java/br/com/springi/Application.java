@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 @SpringBootApplication
@@ -40,5 +41,16 @@ public class Application implements CommandLineRunner {
 		System.out.println("-------------------------------");
 
 		// Exercício 4
+		List<String> lista = new ArrayList<>(Arrays.asList("apple", "banana", "apple", "orange", "banana"));
+		List<String> newLista = new ArrayList<>(Arrays.asList());
+
+		lista.stream()
+						.distinct() // Remover itens duplicados na lista.
+						.sorted(Comparator.reverseOrder())
+						.forEach(current -> newLista.add(current));
+
+		System.out.println("Padrão: " + lista);
+		System.out.println("Sem duplicação: " + newLista);
+		System.out.println("-------------------------------");
 	}
 }
