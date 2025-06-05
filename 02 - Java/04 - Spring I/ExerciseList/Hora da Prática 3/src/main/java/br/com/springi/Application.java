@@ -26,5 +26,19 @@ public class Application implements CommandLineRunner {
 
 		System.out.println("Lista completa: " + numeros);
 		System.out.println("Lista dos pares: " + newNumeros);
+		System.out.println("-------------------------------");
+
+		// Exercício 2
+		List<String> palavras = new ArrayList<>(Arrays.asList("java", "stream", "lambda"));
+		List<String> newPalavras = new ArrayList<>();
+
+		palavras.stream()
+						.forEach(word -> newPalavras.add(word.toUpperCase()));
+
+		System.out.println("Padrão: " + palavras);
+		System.out.println("Caixa alta: " + newPalavras);
+		System.out.println("-------------------------------");
+
+		// Exercício 3
 	}
 }
