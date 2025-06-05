@@ -17,15 +17,15 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		// Exercício 1
+		// Exercício 1 e 3
 		List<Integer> numeros = new ArrayList<>(Arrays.asList(2, 3, 4, 5, 6, 7, 8));
 		List<Integer> newNumeros = new ArrayList<>();
 		numeros.stream()
 						.filter(p -> p % 2 == 0)
-						.forEach(number -> newNumeros.add(number));
+						.forEach(number -> newNumeros.add(number*2));
 
 		System.out.println("Lista completa: " + numeros);
-		System.out.println("Lista dos pares: " + newNumeros);
+		System.out.println("Lista dos pares multiplicados por 2: " + newNumeros);
 		System.out.println("-------------------------------");
 
 		// Exercício 2
@@ -39,6 +39,6 @@ public class Application implements CommandLineRunner {
 		System.out.println("Caixa alta: " + newPalavras);
 		System.out.println("-------------------------------");
 
-		// Exercício 3
+		// Exercício 4
 	}
 }

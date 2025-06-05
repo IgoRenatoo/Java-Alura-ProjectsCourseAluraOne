@@ -8,7 +8,7 @@
 
 - [x] Dada a lista de strings `List<String> palavras = Arrays.asList("java", "stream", "lambda");`, converta todas as palavras para --letras maiúsculas-- e imprima.
 
-- [] Dada a lista `List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6);`, filtre os números --ímpares--, --multiplique cada um por 2--, e colete os resultados em uma nova lista.
+- [x] Dada a lista `List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6);`, filtre os números --ímpares--, --multiplique cada um por 2--, e colete os resultados em uma nova lista.
 
 - [] Dada a lista `List<String> palavras = Arrays.asList("apple", "banana", "apple", "orange", "banana");`, --remova as duplicatas-- e imprima o resultado.
 
