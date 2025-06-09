@@ -14,7 +14,7 @@
 
 - [x] Dada uma lista de sublistas `List<List<Integer>> listaDeNumeros`, extraia --todos os números primos--, colete-os em uma única lista e ordene em ordem crescente.
 
-- [] Dado um objeto `Pessoa` com os campos `nome` e `idade`, filtre as pessoas com --mais de 18 anos--, extraia seus nomes e imprima-os em --ordem alfabética--.
+- [x] Dado um objeto `Pessoa` com os campos `nome` e `idade`, filtre as pessoas com --mais de 18 anos--, extraia seus nomes e imprima-os em --ordem alfabética--.
 
 - [] Dada a lista de objetos `Produto`, filtre todos os produtos da --categoria "Eletrônicos" com preço menor que R$ 1000--, ordene-os pelo preço em ordem crescente e colete o resultado em uma nova lista.
 

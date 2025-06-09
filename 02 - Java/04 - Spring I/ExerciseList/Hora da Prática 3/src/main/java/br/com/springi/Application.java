@@ -1,5 +1,6 @@
 package br.com.springi;
 
+import br.com.springi.model.Person;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,6 +26,7 @@ public class Application implements CommandLineRunner {
 						.filter(p -> p % 2 == 0)
 						.forEach(number -> newNumeros.add(number*2));
 
+		System.out.println("Exercício 1 e 3");
 		System.out.println("Lista completa: " + numeros);
 		System.out.println("Lista dos pares multiplicados por 2: " + newNumeros);
 		System.out.println("-------------------------------");
@@ -36,6 +38,7 @@ public class Application implements CommandLineRunner {
 		palavras.stream()
 						.forEach(word -> newPalavras.add(word.toUpperCase()));
 
+		System.out.println("Exercício 2");
 		System.out.println("Padrão: " + palavras);
 		System.out.println("Caixa alta: " + newPalavras);
 		System.out.println("-------------------------------");
@@ -49,6 +52,7 @@ public class Application implements CommandLineRunner {
 						.sorted(Comparator.reverseOrder())
 						.forEach(current -> newLista.add(current));
 
+		System.out.println("Exercício 4");
 		System.out.println("Padrão: " + lista);
 		System.out.println("Sem duplicação: " + newLista);
 		System.out.println("-------------------------------");
@@ -75,6 +79,26 @@ public class Application implements CommandLineRunner {
 							}
 						});
 
+		System.out.println("Exercício 5");
 		System.out.println("Lista dos números primos: " + newListaNumeros);
+		System.out.println("-------------------------------");
+
+		// Exercício 6
+
+		List<Person> listPerson = new ArrayList<>();
+		List<Person> newListPerson = new ArrayList<>();
+
+		listPerson.add(new Person("Igor", 32));
+		listPerson.add(new Person("Teste", 4));
+		listPerson.add(new Person("Renato", 18));
+
+		listPerson.stream()
+						.filter(e -> e.getAge() >= 18)
+						.forEach(current -> newListPerson.add(current));
+
+		System.out.println("Exercício 6");
+		System.out.println("Lista completa: " + listPerson);
+		System.out.println("Lista maior de idade: " + newListPerson);
+		System.out.println("-------------------------------");
 	}
 }
