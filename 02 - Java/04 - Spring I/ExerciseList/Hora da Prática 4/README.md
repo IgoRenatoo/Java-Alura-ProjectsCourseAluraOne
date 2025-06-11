@@ -7,7 +7,7 @@
 - [x] Dada a lista de números inteiros `List<Integer> numeros = Arrays.asList(10, 20, 30, 40, 50);`, encontre o **maior número** dela utilizando `Stream`.
 
 
-- [ ] Dada a lista de palavras `List<String> palavras = Arrays.asList("java", "stream", "lambda", "code");`, **agrupá-las por tamanho** em um `Map<Integer, List<String>>`.
+- [x] Dada a lista de palavras `List<String> palavras = Arrays.asList("java", "stream", "lambda", "code");`, **agrupá-las por tamanho** em um `Map<Integer, List<String>>`.
 
 
 * [ ] Dada a lista de nomes `List<String> nomes = Arrays.asList("Alice", "Bob", "Charlie");`, **concatene-os separados por vírgula**. Resultado esperado: `"Alice, Bob, Charlie"`.
