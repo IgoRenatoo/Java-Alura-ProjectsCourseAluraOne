@@ -35,5 +35,11 @@ public class Application implements CommandLineRunner {
 		System.out.println("------------------------");
 
 		// Exercício 3
+		List<String> nomes = Arrays.asList("Alice", "Bob", "Charlie");
+
+		String concatName = nomes.stream().collect(Collectors.joining(", "));
+		System.out.println("Exercício 3");
+		System.out.println("Nomes concatenados: " + concatName);
+		System.out.println("------------------------");
 	}
 }

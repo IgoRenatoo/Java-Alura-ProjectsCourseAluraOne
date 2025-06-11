@@ -10,7 +10,7 @@
 - [x] Dada a lista de palavras `List<String> palavras = Arrays.asList("java", "stream", "lambda", "code");`, **agrupá-las por tamanho** em um `Map<Integer, List<String>>`.
 
 
-* [ ] Dada a lista de nomes `List<String> nomes = Arrays.asList("Alice", "Bob", "Charlie");`, **concatene-os separados por vírgula**. Resultado esperado: `"Alice, Bob, Charlie"`.
+* [x] Dada a lista de nomes `List<String> nomes = Arrays.asList("Alice", "Bob", "Charlie");`, **concatene-os separados por vírgula**. Resultado esperado: `"Alice, Bob, Charlie"`.
 
 
 * [ ] Dada a lista de números `List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6);`, **calcule a soma dos quadrados dos números pares** utilizando `Stream`.
