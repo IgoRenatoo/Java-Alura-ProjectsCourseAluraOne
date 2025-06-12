@@ -79,10 +79,25 @@ public class Application implements CommandLineRunner {
 		List<Product> filterValue = stock.stream()
 						.filter(i -> i.getPrice() > 1000 && i.getType() == "eletro").toList();
 
+		System.out.println("Exercício 6");
 		System.out.println("Lista dos itens ordenados por preço.");
 		orderList.forEach(i -> System.out.println("Item: " + i.getName() + ", Preço: " + i.getPrice()));
 		System.out.println("\nLista dos itens acima de R$ 1000,00 da categoria eletro.");
 		filterValue.forEach(i -> System.out.println("Item: " + i.getName() + ", Preço: " + i.getPrice()));
+		System.out.println("------------------------");
+
+		// Exercício 7
+		orderList = stock.stream()
+						.sorted(Comparator.comparing(Product::getPrice)).toList();
+
+		System.out.println("Exercício 7");
+		System.out.println("\nOs 3 itens mais baratos!");
+		for (int i = 0; i < 3; i++){
+			System.out.println("Item: " + orderList.get(i).getName() + ", Preço: " + orderList.get(i).getPrice());
+		}
+		System.out.println("------------------------");
+
+
 
 	}
 

@@ -23,7 +23,7 @@
   * Use como base a classe `Produto`:  Cada produto possui os atributos nome (String), preco (double) e categoria (String).
 
 
-* [ ] A partir do exercício anterior, **modifique o código para que a saída mostre apenas os três produtos mais baratos** da categoria "Eletrônicos".
+* [x] A partir do exercício anterior, **modifique o código para que a saída mostre apenas os três produtos mais baratos** da categoria "Eletrônicos".
 
 
 * [ ] Dada a lista de produtos, **agrupe-os por categoria** em um `Map<String, List<Produto>>`.
