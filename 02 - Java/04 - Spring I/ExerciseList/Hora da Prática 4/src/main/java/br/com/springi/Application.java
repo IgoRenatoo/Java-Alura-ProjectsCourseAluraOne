@@ -1,5 +1,6 @@
 package br.com.springi;
 
+import br.com.springi.model.Product;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -62,6 +63,27 @@ public class Application implements CommandLineRunner {
 		System.out.println("Lista par: " + pairOrOdd.get(true));
 		System.out.println("Lista impar: " + pairOrOdd.get(false));
 		System.out.println("------------------------");
+
+		// Exercício 6
+		List<Product> stock = new ArrayList<>();
+
+		stock.add(new Product("mouse", "eletro", 436.00));
+		stock.add(new Product("monitor", "eletro", 1129.00));
+		stock.add(new Product("mesa", "movel", 622.00));
+		stock.add(new Product("cadeira", "movel", 1499.00));
+		stock.add(new Product("luminária", "iluminação", 136.00));
+
+		List<Product> orderList = stock.stream()
+						.sorted(Comparator.comparing(Product::getPrice)).toList().reversed();
+
+		List<Product> filterValue = stock.stream()
+						.filter(i -> i.getPrice() > 1000 && i.getType() == "eletro").toList();
+
+		System.out.println("Lista dos itens ordenados por preço.");
+		orderList.forEach(i -> System.out.println("Item: " + i.getName() + ", Preço: " + i.getPrice()));
+		System.out.println("\nLista dos itens acima de R$ 1000,00 da categoria eletro.");
+		filterValue.forEach(i -> System.out.println("Item: " + i.getName() + ", Preço: " + i.getPrice()));
+
 	}
 
 }

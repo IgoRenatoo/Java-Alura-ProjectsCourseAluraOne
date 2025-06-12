@@ -19,8 +19,8 @@
 * [x] Dada a lista `List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6);`, **separe os números pares dos ímpares** em um `Map<Boolean, List<Integer>>` usando `partitioningBy`.
 
 
-* [ ] Dada a lista de produtos, **filtre todos os produtos da categoria "Eletrônicos" com preço menor que R\$ 1000**, ordene pelo preço em ordem crescente e colete o resultado em uma nova lista. 
-  * Use como base a classe `Produto`:  Cada produto possui os atributos nome (String), preco (double) e categoria (String). Filtre todos os produtos da categoria "Eletrônicos" com preço menor que R$ 1000, ordene-os pelo preço em ordem crescente e colete o resultado em uma nova lista.
+* [x] Dada a lista de produtos, **filtre todos os produtos da categoria "Eletrônicos" com preço menor que R\$ 1000**, ordene pelo preço em ordem crescente e colete o resultado em uma nova lista. 
+  * Use como base a classe `Produto`:  Cada produto possui os atributos nome (String), preco (double) e categoria (String).
 
 
 * [ ] A partir do exercício anterior, **modifique o código para que a saída mostre apenas os três produtos mais baratos** da categoria "Eletrônicos".
