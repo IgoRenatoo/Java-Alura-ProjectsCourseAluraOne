@@ -112,6 +112,16 @@ public class Application implements CommandLineRunner {
 		System.out.println("Iluminação - " + listIlumin.size() +" itens: " + listIlumin);
 		System.out.println("------------------------");
 
+		// Exercício 9
+		Map<String ,Long> countItensStock = stock.stream()
+						.collect(Collectors.groupingBy(i -> i.getType(), Collectors.counting()));
+
+		System.out.println("Exercício 9");
+		System.out.println("Quantidade por categoria: ");
+		System.out.println("Eletrônico - " + listEletro.size() +" itens: " + listEletro);
+		System.out.println("Móveis - " + listMovel.size() +" itens: " + listMovel);
+		System.out.println("Iluminação - " + listIlumin.size() +" itens: " + listIlumin);
+		System.out.println("------------------------");
 	}
 
 }

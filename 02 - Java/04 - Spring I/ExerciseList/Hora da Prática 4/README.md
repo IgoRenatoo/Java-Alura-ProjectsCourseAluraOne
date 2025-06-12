@@ -29,7 +29,7 @@
 * [x] Dada a lista de produtos, **agrupe-os por categoria** em um `Map<String, List<Produto>>`.
 
 
-* [ ] Dada a lista de produtos, **conte quantos produtos há em cada categoria** e armazene em um `Map<String, Long>`.
+* [x] Dada a lista de produtos, **conte quantos produtos há em cada categoria** e armazene em um `Map<String, Long>`.
 
 
 * [ ] Dada a lista de produtos, **encontre o produto mais caro de cada categoria** e armazene o resultado em um `Map<String, Optional<Produto>>`.
