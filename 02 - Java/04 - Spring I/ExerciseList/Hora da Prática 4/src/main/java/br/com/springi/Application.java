@@ -53,6 +53,15 @@ public class Application implements CommandLineRunner {
 		System.out.println("Exercício 4");
 		System.out.println("A soma dos quadrados dos números pares é: " + sumNumbers);
 		System.out.println("------------------------");
+
+		// Exercício 5 - Utilizando "numbers"
+		Map<Boolean, List<Integer>> pairOrOdd = numbers.stream()
+						.collect(Collectors.partitioningBy(n -> n % 2 == 0));
+
+		System.out.println("Exercício 5");
+		System.out.println("Lista par: " + pairOrOdd.get(true));
+		System.out.println("Lista impar: " + pairOrOdd.get(false));
+		System.out.println("------------------------");
 	}
 
 }
