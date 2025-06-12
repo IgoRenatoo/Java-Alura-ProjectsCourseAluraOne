@@ -97,7 +97,20 @@ public class Application implements CommandLineRunner {
 		}
 		System.out.println("------------------------");
 
+		// Exercício 8
+		Map<String, List<Product>> category = stock.stream()
+						.collect(Collectors.groupingBy(w -> w.getType()));
 
+		var listEletro = category.get("eletro");
+		var listMovel = category.get("movel");
+		var listIlumin = category.get("iluminação");
+
+		System.out.println("Exercício 8");
+		System.out.println("Itens por categoria: ");
+		System.out.println("Eletrônico - " + listEletro.size() +" itens: " + listEletro);
+		System.out.println("Móveis - " + listMovel.size() +" itens: " + listMovel);
+		System.out.println("Iluminação - " + listIlumin.size() +" itens: " + listIlumin);
+		System.out.println("------------------------");
 
 	}
 

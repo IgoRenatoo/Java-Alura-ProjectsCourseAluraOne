@@ -26,7 +26,7 @@
 * [x] A partir do exercício anterior, **modifique o código para que a saída mostre apenas os três produtos mais baratos** da categoria "Eletrônicos".
 
 
-* [ ] Dada a lista de produtos, **agrupe-os por categoria** em um `Map<String, List<Produto>>`.
+* [x] Dada a lista de produtos, **agrupe-os por categoria** em um `Map<String, List<Produto>>`.
 
 
 * [ ] Dada a lista de produtos, **conte quantos produtos há em cada categoria** e armazene em um `Map<String, Long>`.
