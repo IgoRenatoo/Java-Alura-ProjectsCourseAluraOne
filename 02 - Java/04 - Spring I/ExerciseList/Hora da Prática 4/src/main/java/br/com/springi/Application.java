@@ -41,5 +41,18 @@ public class Application implements CommandLineRunner {
 		System.out.println("Exercício 3");
 		System.out.println("Nomes concatenados: " + concatName);
 		System.out.println("------------------------");
+
+		// Exercício 4
+		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 8, 9);
+
+		var sumNumbers = numbers.stream()
+						.filter(n -> n % 2 == 0)
+						.map(n -> n*n)
+						.reduce(0, Integer::sum);
+
+		System.out.println("Exercício 4");
+		System.out.println("A soma dos quadrados dos números pares é: " + sumNumbers);
+		System.out.println("------------------------");
 	}
+
 }
